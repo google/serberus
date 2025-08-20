@@ -65,7 +65,8 @@ example<br>
 `screen /dev/ttyUSB0 {baudrate}`
 
 ### JTAG
-I need to do a little more work here as most of the tools like `pyftdi` and `flashrom` do not look for the FT4233. `pyftdi` should work with `--vidpid` flag and the value 0403:6041. You may need to change udev permissions 
+I need to do a little more work here as most of the tools like `pyftdi` and `flashrom` do not look for the FT4233. `pyftdi` should work with `--vidpid` flag and the value 0403:6041. You need to change udev permissions.
+For OpenOCD, compile from source using "./configure --enable-ftdi". USB VID:PID is 0403:6041.
 
 ### SWD, I2C, SPI
 Details coming soon
